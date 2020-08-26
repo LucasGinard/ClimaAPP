@@ -13,44 +13,20 @@
         android:layout_height="90dp"
         android:contentDescription="@string/app_name"
         android:hapticFeedbackEnabled="false"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109"
+        app:layout_constraintVertical_bias="0.155"
         app:srcCompat="@drawable/iconasu" />
-
-    <ImageButton
-        android:id="@+id/pasar4"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="308dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconloma" />
-
-    <ImageButton
-        android:id="@+id/pasar3"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="184dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toStartOf="@+id/pasar2"
-        app:layout_constraintHorizontal_bias="0.372"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconenca" />
 
     <ImageButton
         android:id="@+id/pasar2"
         android:layout_width="176dp"
         android:layout_height="90dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
@@ -62,7 +38,7 @@
         android:id="@+id/pasar5"
         android:layout_width="176dp"
         android:layout_height="90dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="332dp"
         android:layout_marginEnd="216dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
@@ -74,7 +50,7 @@
         android:id="@+id/pasar6"
         android:layout_width="176dp"
         android:layout_height="90dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="444dp"
         android:layout_marginEnd="216dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
@@ -86,12 +62,37 @@
         android:id="@+id/pasar7"
         android:layout_width="176dp"
         android:layout_height="90dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="444dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconcaacupe" />
+
+    <ImageButton
+        android:id="@+id/pasar4"
+        android:layout_width="176dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconloma" />
+
+    <ImageButton
+        android:id="@+id/pasar3"
+        android:layout_width="176dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="208dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@+id/pasar2"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconenca" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
