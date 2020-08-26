@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true);
         supportActionBar?.setIcon(R.mipmap.ic_launcher);
 
-        var apikey = "95d164075f415ce1eff1ab7453be71bd"
+        var apikey = "su KEY VA AQUI"
 
         pasar.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
