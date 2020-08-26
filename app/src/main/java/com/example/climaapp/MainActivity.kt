@@ -1,30 +1,28 @@
 package com.example.climaapp
 
-import android.app.DownloadManager
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import com.android.volley.Request
-import com.android.volley.RequestQueue
-import com.android.volley.Response
-import com.android.volley.VolleyError
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.JsonRequest
-import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONException
-import org.json.JSONObject
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        getSupportActionBar()?.setDisplayShowHomeEnabled(true);
-        getSupportActionBar()?.setIcon(R.mipmap.ic_launcher);
+        supportActionBar?.setDisplayShowHomeEnabled(true);
+        supportActionBar?.setIcon(R.mipmap.ic_launcher);
 
         pasar.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=asuncion&appid=95d164075f415ce1eff1ab7453be71bd&units=metric&lang=sp")
+            }
+            startActivity(intent)
+        }
+        pasar2.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java).apply {
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=encarnacion&appid=95d164075f415ce1eff1ab7453be71bd&units=metric&lang=sp")
             }
             startActivity(intent)
         }

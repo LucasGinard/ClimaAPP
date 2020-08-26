@@ -1,30 +1,28 @@
 package com.example.climaapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcel
+import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main2.*
 import org.json.JSONException
-import javax.xml.parsers.ParserConfigurationException
-import kotlin.math.absoluteValue
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        getSupportActionBar()?.setDisplayShowHomeEnabled(true);
-        getSupportActionBar()?.setIcon(R.mipmap.ic_launcher);
+        supportActionBar?.setDisplayShowHomeEnabled(true);
+        supportActionBar?.setIcon(R.mipmap.ic_launcher);
         climafun()
-
     }
     private fun climafun() {
-        var url = "https://api.openweathermap.org/data/2.5/weather?q=asuncion&appid=95d164075f415ce1eff1ab7453be71bd&units=metric&lang=sp"
-        val jsonObjectRequest = JsonObjectRequest(
-            Request.Method.GET, url, null, { response ->
+
+        var numero = intent.getStringExtra("ubicacion")
+        var url = numero
+
+        val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null, { response ->
             try {
                 var main_object = response.getJSONObject("main")
                 var array1 = response.getJSONArray("weather")
@@ -34,29 +32,21 @@ class MainActivity2 : AppCompatActivity() {
                 var city = response.getString("name")
                 var tempminima = main_object.getDouble("temp_min")
                 var tempmaxima = main_object.getDouble("temp_max")
-                var sensaciontm = main_object.getDouble("main.feels_like")
+                var sensaciontm = main_object.getDouble("feels_like")
 
                 tvcity.setText(city)
                 tvdescripcion.setText(descripcion)
+                tvtemp.text = temp.toString()
+                tvmaxima.text = tempmaxima.toString()
+                tvminima.text = tempminima.toString()
+                tvfeel.text = sensaciontm.toString()
 
-
-
-                var temp_int:Double = temp
-                var centi:Double = (temp_int -32)/1.8000
-                var i:Int = centi.toInt()
-                tvtemp.setText(i)
-
-
-               // tvminima.setText(tempminima.toString())
-                //tvmaxima.setText(tempmaxima.toInt())
-
-
-            }catch (e: JSONException){
+            } catch (e: JSONException) {
                 e.printStackTrace()
             }
         },
             { error ->
-                // TODO: Handle error
+                print("funciona")
             }
         )
         var vol: RequestQueue = Volley.newRequestQueue(this)
