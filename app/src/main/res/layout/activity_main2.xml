@@ -167,24 +167,24 @@
         android:id="@+id/imageView4"
         android:layout_width="44dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="288dp"
         android:contentDescription="@string/Sensacióntérmica"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/maximaview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
         app:srcCompat="@drawable/iconmaxima" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="36dp"
         android:layout_height="31dp"
-        android:layout_marginBottom="248dp"
         android:contentDescription="@string/Sensacióntérmica"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintEnd_toStartOf="@+id/tect"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624"
         app:srcCompat="@drawable/iconminima" />
 
     <ImageView
