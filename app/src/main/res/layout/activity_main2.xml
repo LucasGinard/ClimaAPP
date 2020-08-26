@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/botoncircular"
     tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/tvcity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ciudad"
+        android:text="@string/ciudad"
         android:textColor="#090707"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:text="Temperatura"
+        android:text="@string/Temperatura"
         android:textColor="#090606"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,24 +34,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="°"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/tvtemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="32"
+        android:text="@string/vaCargando"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,23 +50,24 @@
         android:id="@+id/tvdescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Descripcion"
+        android:text="@string/vaCargando"
         android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.681" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
 
     <TextView
         android:id="@+id/maximaview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:text="Temperatura Maxima"
+        android:layout_marginEnd="16dp"
+        android:text="@string/TemperaturaMaxima"
         android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -91,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="123"
+        android:text="@string/vaCargando"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,12 +90,12 @@
         android:id="@+id/tvmaxima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="123"
+        android:layout_marginTop="36dp"
+        android:text="@string/vaCargando"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/maximaview" />
 
@@ -116,12 +103,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:text="Sensación térmica"
+        android:layout_marginTop="240dp"
+        android:text="@string/Sensacióntérmica"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,12 +116,12 @@
         android:id="@+id/tvfeel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:text="312"
+        android:layout_marginTop="272dp"
+        android:text="@string/vaCargando"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.698"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -142,20 +129,22 @@
         android:id="@+id/tect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Temperatura Minima"
+        android:text="@string/TemperaturaMinima"
         android:textColor="#130B0B"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.608" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="50dp"
         android:layout_height="74dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toStartOf="@+id/tvcity"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,16 +155,12 @@
         android:id="@+id/imageView2"
         android:layout_width="41dp"
         android:layout_height="37dp"
+        android:layout_marginTop="112dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:srcCompat="@drawable/icontemperatura"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="233dp"
-        android:layout_height="358dp"
-        app:srcCompat="@drawable/iconoclimaapp"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="394dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icontemperatura" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

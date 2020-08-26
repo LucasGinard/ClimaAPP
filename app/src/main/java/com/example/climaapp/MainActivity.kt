@@ -13,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowHomeEnabled(true);
         supportActionBar?.setIcon(R.mipmap.ic_launcher);
+
         var apikey = "95d164075f415ce1eff1ab7453be71bd"
+
         pasar.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=asuncion&units=metric&lang=sp%22&appid=${apikey}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=asuncion&units=metric&lang=sp&appid=${apikey}")
             }
             startActivity(intent)
         }
@@ -41,6 +43,19 @@ class MainActivity : AppCompatActivity() {
         pasar5.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
                 putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Villarrica&units=metric&lang=sp&appid=${apikey}")
+            }
+            startActivity(intent)
+        }
+
+        pasar6.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java).apply {
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Fernando%20de%20la%20Mora,%20PY&units=metric&lang=sp&appid=${apikey}")
+            }
+            startActivity(intent)
+        }
+        pasar7.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java).apply {
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Caacupé,%20PY&units=metric&lang=sp&appid=${apikey}")
             }
             startActivity(intent)
         }

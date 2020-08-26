@@ -7,4 +7,14 @@
     <string name="loma">Loma Plata</string>
     <string name="villa">Villarrica</string>
 
+    <string name="Temperatura">Temperatura</string>
+    <string name="Sensacióntérmica">Sensación térmica</string>
+    <string name="TemperaturaMaxima">Temperatura Maxima</string>
+    <string name="TemperaturaMinima">Temperatura Minima</string>
+    <string name="ciudad">Ciudad</string>
+
+    <string name="vaCargando">Cargando</string>
+
+
+
 </resources>
