@@ -14,6 +14,10 @@
     <string name="ciudad">Ciudad</string>
 
     <string name="vaCargando">Cargando</string>
+    <string name="Selecciontemperatura">Seleccionar como calcular temperatura</string>
+    <string name="temperaturacelsius">Celsius</string>
+    <string name="temperaturafaranght">Fahrenheit</string>
+    <string name="temperaturakelvin">Kelvin </string>
 
 
 

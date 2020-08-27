@@ -18,9 +18,9 @@ class MainActivity2 : AppCompatActivity() {
         climafun()
     }
     private fun climafun() {
-
+        var medidatemp = intent.getStringExtra("medidatemp")
         var numero = intent.getStringExtra("ubicacion")
-        var url = numero
+        var url = "${numero}${medidatemp}"
 
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null, { response ->
             try {
