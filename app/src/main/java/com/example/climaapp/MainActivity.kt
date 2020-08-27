@@ -23,44 +23,44 @@ class MainActivity : AppCompatActivity() {
 
         pasar.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=asuncion&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=asuncion&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
         pasar2.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Ciudad%20del%20Este,%20PY&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Ciudad%20del%20Este,%20PY&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
         pasar3.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=encarnacion&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=encarnacion&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
         pasar4.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Loma%20Plata,%20PY&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Loma%20Plata,%20PY&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
         pasar5.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Villarrica&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Villarrica&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
 
         pasar6.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Fernando%20de%20la%20Mora,%20PY&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Fernando%20de%20la%20Mora,%20PY&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
         pasar7.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
-                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Caacupé,%20PY&lang=sp&appid=${apikey}&units=${medidatemp}")
+                putExtra("ubicacion","https://api.openweathermap.org/data/2.5/weather?q=Caacupé,%20PY&lang=sp&appid=${apikey}&units=metric")
             }
             startActivity(intent)
         }
