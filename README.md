@@ -6,7 +6,7 @@ Proyecto Clima
    ![Captura](https://user-images.githubusercontent.com/57275367/91367860-8b56e700-e7d5-11ea-8687-a582d5b2437a.PNG)
 
    
-    Lista de los features Funcionan
+    Lista de los features que Funcionan
     - 7 Ciudades del Paraguay
     - Temperatura
     - Temperatura Maxima
