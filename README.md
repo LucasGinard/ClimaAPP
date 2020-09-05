@@ -14,6 +14,7 @@ Proyecto Clima
     - Descripcion del clima
     - Sensación térmica
     - Nombra de la Ciudad seleccionada 
+    - Descripción del clima
     
     Lista de los features que no Funcionan
     - Conversion de celsius,fahrenheit o kelvin
