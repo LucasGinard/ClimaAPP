@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".MainActivity2">
 
     <TextView
@@ -23,9 +22,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toStartOf="@+id/tvcity"
         app:layout_constraintHorizontal_bias="1.0"

@@ -13,14 +13,14 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        supportActionBar?.setDisplayShowHomeEnabled(true);
-        supportActionBar?.setIcon(R.mipmap.ic_launcher);
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setIcon(R.mipmap.ic_launcher)
         climafun()
     }
     private fun climafun() {
-        var medidatemp = intent.getStringExtra("medidatemp")
+
         var numero = intent.getStringExtra("ubicacion")
-        var url = "${numero}${medidatemp}"
+        var url = numero
 
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null, { response ->
             try {
@@ -34,8 +34,8 @@ class MainActivity2 : AppCompatActivity() {
                 var tempmaxima = main_object.getDouble("temp_max")
                 var sensaciontm = main_object.getDouble("feels_like")
 
-                tvcity.setText(city)
-                tvdescripcion.setText(descripcion)
+                tvcity.text = city
+                tvdescripcion.text = descripcion
                 tvtemp.text = temp.toString()
                 tvmaxima.text = tempmaxima.toString()
                 tvminima.text = tempminima.toString()

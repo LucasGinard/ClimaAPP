@@ -7,140 +7,125 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/pasar"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:contentDescription="@string/app_name"
-        android:hapticFeedbackEnabled="false"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072"
-        app:srcCompat="@drawable/iconasu" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/pasar5"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="216dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconvilla" />
-
-    <ImageButton
-        android:id="@+id/pasar7"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconcaacupe" />
-
-    <ImageButton
-        android:id="@+id/pasar6"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="216dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconfernando" />
-
-    <ImageButton
-        android:id="@+id/pasar4"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconloma" />
-
-    <ImageButton
-        android:id="@+id/pasar3"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="164dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toStartOf="@+id/pasar2"
-        app:layout_constraintHorizontal_bias="0.372"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconenca" />
-
-    <ImageButton
-        android:id="@+id/pasar2"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconcde" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="1"
-        android:text="@string/Selecciontemperatura"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="414dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/temperaturafaranght" />
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/temperaturacelsius" />
+            <ImageButton
+                android:id="@+id/pasar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:hapticFeedbackEnabled="false"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconasu" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/temperaturakelvin" />
-    </RadioGroup>
+            <ImageButton
+                android:id="@+id/pasar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconcde" />
+
+            <ImageButton
+                android:id="@+id/pasar3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconenca" />
+
+            <ImageButton
+                android:id="@+id/pasar4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconloma" />
+
+            <ImageButton
+                android:id="@+id/pasar5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconvilla" />
+
+            <ImageButton
+                android:id="@+id/pasar6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconfernando" />
+
+            <ImageButton
+                android:id="@+id/pasar7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconcaacupe" />
+
+            <ImageButton
+                android:id="@+id/pasar8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconhernandarias" />
+
+            <ImageButton
+                android:id="@+id/pasar9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconlambare" />
+
+            <ImageButton
+                android:id="@+id/pasar10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconsanlorenzo" />
+
+            <ImageButton
+                android:id="@+id/pasar11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconvillaelisa" />
+
+            <ImageButton
+                android:id="@+id/pasar12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/iconnemby" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
